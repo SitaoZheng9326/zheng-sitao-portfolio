@@ -25,6 +25,7 @@ jobs:
         run: |
           cat site.github.zip.part.* > site.zip
           unzip -q site.zip -d site
+          unzip -qo site.patch.zip -d site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
